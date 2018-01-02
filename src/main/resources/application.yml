@@ -1,0 +1,19 @@
+#this client server port
+server:
+  port: 9099
+  
+security:    
+  basic:    
+    enabled: false    
+  user:    
+    name: admin
+    password: password
+#remote server address
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:password@localhost:9090/eureka/
+
+spring:
+  application:
+    name: service-hystrix
